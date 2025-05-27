@@ -1,5 +1,6 @@
 package pizza.market.entity.pizza;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -17,9 +18,10 @@ public final class ItalianPizza implements Pizza {
     private final Topping olives;
     private final Topping mushrooms;
 
+    @Autowired
     public ItalianPizza(
             @Qualifier("yeastDough") final Dough yeastDough,
-            @Qualifier("peperoni")   final Topping peperoni,
+            @Qualifier("pepperoni")   final Topping peperoni,
             @Qualifier("olives")     final Topping olives,
             @Qualifier("mushroom")   final Topping mushrooms
     ){

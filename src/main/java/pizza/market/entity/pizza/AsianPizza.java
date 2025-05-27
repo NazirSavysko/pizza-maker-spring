@@ -38,6 +38,6 @@ public final class AsianPizza implements Pizza {
     public void bake() {
         out.println("Baking Asian pizza...");
         out.printf("Dough: %s%n",shortcrustDough.getName());
-        out.printf("Topping: %s, %s, %s, %s%n",ham.getName(),cucumbers.getName(),olives,mushrooms.getName());
+        out.printf("Topping: %s, %s, %s, %s%n",ham.getName(),cucumbers.getName(),olives.getName(),mushrooms.getName());
     }
 }
